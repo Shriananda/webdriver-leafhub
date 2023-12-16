@@ -851,9 +851,9 @@ public class SeleniumBase extends ExtentReporter implements Browser, Element  {
 	public void close() {
 		try {
 			getDriver().close();
-			reportStep("Browser is closed", "info", false);
+			//reportStep("Browser is closed", "info", false);
 		} catch (Exception e) {
-			reportStep("Browser cannot be closed " + e.getMessage(), "fail", false);
+			//reportStep("Browser cannot be closed " + e.getMessage(), "fail", false);
 		}
 	}
 
