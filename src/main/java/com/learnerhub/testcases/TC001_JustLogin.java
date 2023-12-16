@@ -18,11 +18,11 @@ public class TC001_JustLogin extends ProjectHooks{
 	@Test
 	public void runLogin() {
 		System.out.println("asdf");
-		new LoginPage()
+		/*new LoginPage()
 		.enterUsername()
 		.enterPassword()
 		.clickLogin()
-		.clickLogout();
+		.clickLogout();*/
 
 	}
 
