@@ -33,12 +33,8 @@ public class DriverInstance  extends AbstractTestNGCucumberTests{
 			chrome_options.addArguments("--disable-dev-shm-usage"); 
 			chrome_options.addArguments("--disable-notifications"); 
 			//chrome_options.addArguments("--headless");
-				chrome_options.add_argument('--ignore-ssl-errors=yes')
-chrome_options.add_argument('--ignore-certificate-errors')
-
-				
-
-
+			chrome_options.add_argument('--ignore-ssl-errors=yes');
+			chrome_options.add_argument('--ignore-certificate-errors');
 			remoteWebdriver.set(new ChromeDriver(chrome_options));
 			break;
 		case "firefox":
