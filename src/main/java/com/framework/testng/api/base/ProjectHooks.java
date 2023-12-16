@@ -19,7 +19,8 @@ public class ProjectHooks extends SeleniumBase {
 	
 	@BeforeMethod
 	public void preCondition() {
-		String appUrl  = System.getProperty("server.ip");
+		//String appUrl  = System.getProperty("server.ip");
+		String appUrl  = System.getProperty("url.base");
 		if(appUrl == null) {
 			appUrl = ConfigurationManager.configuration().baseUrl();
 		} else {
