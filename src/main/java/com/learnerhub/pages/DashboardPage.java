@@ -19,7 +19,8 @@ public class DashboardPage extends ProjectHooks{
 	
 	public LoginPage clickLogout() {
 		click(locateElement(Locators.XPATH, "//a[@href='/leaf/dashboard/logout']"));
-		reportStep("Logout Link is clicked", "pass");
+		//reportStep("Logout Link is clicked", "pass");
+			System.out.println("Logout Link is clicked");
 		return new LoginPage();
 	}
 	
